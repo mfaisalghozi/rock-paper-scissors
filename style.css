@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+  background-color: #FA7070;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+}
+
+nav {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 2rem;
+  font-size: 20px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-text {
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: blue;
+}
