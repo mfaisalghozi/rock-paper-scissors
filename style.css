@@ -1,22 +1,40 @@
+/* Default Styling */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: 'Oswald', sans-serif;
+  height: 100%;
 }
 
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 25px;
+}
+
+.show {
+  display:block !important;
+}
+
+/* Header Styling */
+
 header {
-  background-color: #FA7070;
+  background-color: #47B5FF;
   color: white;
   padding: 2rem;
 }
 
 .title {
   text-align: center;
+  font-size: 1.5rem;
 }
+
+/* Navigation Styling */
 
 nav {
   margin-top: 2rem;
@@ -24,6 +42,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  overflow: hidden;
 }
 
 nav a {
@@ -46,4 +65,399 @@ nav a {
 
 nav a:hover {
   color: blue;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin: .5rem 0;
+    font-size: 20px;
+  }
+}
+
+/* Dropdown Styling */
+
+.dropdown {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.dropdown span {
+  margin-right: 10px;
+}
+
+.dropdownBtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 20px;
+}
+
+.dropdown button:hover {
+  color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 0;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #256D85;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .dropdown {
+    display: inline-block;
+    margin: 0.5rem auto;
+  }
+}
+
+/* Main Styling */
+
+main {
+  width: 100%;
+  min-height: 75vh;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+}
+
+main #content {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+main .title-content {
+  text-align: center;
+  font-size: 18px;
+  margin: 2rem 0;
+}
+
+main article {
+  border: 1px solid #06283D;
+}
+
+main .article-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+img {
+  max-width: 10rem;
+}
+
+#content .title-article {
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main #content {
+    width: 100%;
+  }
+
+  main .article-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
+
+/* Aside Styling */
+
+aside {
+  float: right;
+  width: 30%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile-creator {
+  width: 100%;
+  border: 1px solid #DFF6FF;
+}
+
+.profile-creator .profile-title h3 {
+  text-align: center;
+}
+
+.profile-content .profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile-desc .field-desc {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  main aside {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* Footer Styling */
+
+footer {
+  background-color: #256D85;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+footer a:hover {
+  color: pink;
+}
+
+.footer-text {
+  margin-right: 5px;
+}
+
+
+
+/**
+  STYLING FOR GAME
+*/
+
+.main-game {
+  width: 100%;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.game-card-title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.game-content .player-move {
+  width: 47%;
+}
+
+.game-content .versus-text {
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.game-content .enemy-move {
+  width: 47%;
+}
+
+
+/* Player Move Styling */
+.btn-text {
+  cursor: pointer;
+}
+
+.hand-gesture {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-gunting,
+.hand-batu {
+  text-align: center;
+}
+
+.hand-kertas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-move .row {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.player-move img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.player-move img:hover {
+  border: 2px solid blue;
+}
+
+.player-move .active {
+  border: 2px solid blue;
+}
+
+.enemy-move .result-move {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-move .question-icon {
+  display: block;
+  font-size: 10rem;
+}
+
+.result-move .loading-icon {
+  display: none;
+  font-size: 10rem;
+  z-index: 2;
+  animation: spin 2s linear infinite;
+}
+
+.reverse-image {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Riwayat Permainan */
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+  text-align: center;
+}
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.btn-restart {
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 10px;
+  width: 20%;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: #425F57;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
 }

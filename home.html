@@ -5,9 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>Home - Rock Paper Scissors</title>
+
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Google Library -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -23,26 +34,102 @@
         <span class="material-symbols-outlined"> stadia_controller </span>
         <div class="link-text">Permainan</div>
       </a>
+      <div class="dropdown">
+        <button onclick="showDropdown()" class="link dropdownBtn">
+          <span class="material-symbols-outlined">
+            account_circle
+          </span>
+          Social Media
+        </button>
+        <div id="dropdown-target" class="dropdown-content">
+          <a 
+            href="https://github.com/mfaisalghozi"
+            target="_blank"
+          >
+            Github
+          </a>
+          <a 
+            href="https://www.dicoding.com/users/mrafcommand"
+            target="_blank"
+            >
+            Dicoding
+          </a>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
     <div id="content">
       <div class="title-content">
-        Sejarah Permainan Gunting Kertas Batu
+        <h2>Permainan Gunting Kertas Batu</h2>
       </div>
-      <article>
-        article 1
+      <article class="card">
+        <div class="title-article">
+          <h3>Apa itu Batu, Gunting & Kertas ?</h3>
+        </div>
+        <div class="article-content">
+          <div class="image-content">
+            <img src="rock-paper-scissors.jpg" alt="batu-guting-kertas-diagram"">
+          </div>
+          <div class="desc-content">
+            diagram permainan Batu-Gunting-Kertas Batu-Gunting-Kertas adalah sebuah permainan tangan dua orang. 
+            Permainan ini sering digunakan untuk pemilihan acak, seperti halnya pelemparan koin, dadu, dan lain-lain. Beberapa permainan dan olahraga menggunakannya untuk menentukan peserta mana yang bermain terlebih dahulu. 
+            Kadang ia juga dipakai untuk menentukan peran dalam permainan peran, maupun dipakai sebagai sarana perjudian. 
+            Permainan ini dimainkan di berbagai belahan dunia.
+          </div>
+        </div>
       </article>
-      <article>
-        article 2
+      <article class="card">
+        <div class="title-article">
+          <h3>Bagaimana Cara Bermain ?</h3>
+        </div>
+        <div class="article-content">
+          <div class="image-content">
+            <img src="hand-gesture.png" alt="hand-gesture-image">
+          </div>
+          <div class="desc-content">
+            Terdapat tiga isyarat tangan dalam permainan ini. Batu digambarkan oleh tangan mengepal, gunting digambarkan oleh jari telunjuk dan tengah, kertas digambarkan oleh tangan terbuka. Tujuan dari permainan adalah mengalahkan lawan bermain. Aturan standar adalah batu mengalahkan gunting, gunting mengalahkan kertas, dan kertas mengalahkan batu.
+            Jika kedua pemain mengeluarkan isyarat yang sama, maka permainan diulang. Kadang kala pemain menggunakan sistem berulang-ulang artinya sekali kemenangan tidak cukup untuk menghentikan permainan. Misalnya pemain yang menang 5 kali terlebih dahulu menjadi pemenang.
+          </div>
+        </div>
       </article>
     </div>
     <aside>
-      Creator
+      <div class="profile-creator card">
+        <div class="profile-title">
+          <h3>Biodata Pembuat</h3>
+        </div>
+        <div class="profile-content">
+          <div class="profile-image">
+            <img src="rock-paper-scissors.jpg" alt="creator-image">
+          </div>
+          <div class="profile-desc">
+            <div class="field-desc">
+              Nama: Muhammad Faisal Ghozi
+            </div>
+            <div class="field-desc">
+              Umur: 23 Tahun
+            </div>
+            <div class="field-desc">
+              Email: mrafgaming@gmail.com
+            </div>
+            <div class="field-desc">
+              Hobby: Bermain game, Membaca, Programming
+            </div>
+          </div>
+        </div>
+      </div>
     </aside>
   </main>
   <footer>
-    ini footer
+    <a href="https://github.com/mfaisalghozi" target="_blank"> 
+      <div class="footer-text">
+        Created With 
+      </div>
+      <span class="material-symbols-outlined">
+        favorite
+      </span>
+    </a>
   </footer>
 
   <script src="index.js"></script>
